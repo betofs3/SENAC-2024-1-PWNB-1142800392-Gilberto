@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://img.odcdn.com.br/wp-content/uploads/2023/07/fundo-do-oceano.jpg");
+    background-size: cover;
+}
+
+
+:root {
+    --cor-primaria-500: #9febfc;
+    --cor-primaria-700: #12CDF8;
+    --cor-secundaria: #0a0908;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+.header__nav {
+    width: 100%;
+    padding: 0rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: var(--cor-primaria-500);
+}
+
+.header__nav-logo-h2 {
+    font-family: "Anton";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    background-image: url('https://i0.wp.com/olharoceanografico.com/wp-content/uploads/2021/12/image.png?w=398&ssl=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 3rem; /* Aumente o gap para 3rem para mais espaçamento */
+    position: relative;
+}
+
+.header__nav-item {
+    position: relative;
+}
+
+.header__nav-link {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--cor-secundaria);
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+.header__nav-sublist {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cor-primaria-500);
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__nav-item:hover .header__nav-sublist {
+    display: block;
+}
+
+.header__nav-sublist li {
+    padding: 0.5rem 1rem;
+}
+
+.header__nav-sublist li a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--cor-secundaria);
+}
+
+.header__nav-login {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__nav-login-img {
+    width: 28px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.header__nav-login-p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+    color: var (--cor-secundaria);
+}
+
+.header__nav-login-p:hover {
+    text-decoration: underline;
+}
+
+.main-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: bisque;
+    margin: 2rem;
+}
+
+.venda-container {
+    width: 70%; /* Largura maior */
+    margin: 50px auto; /* Centralizar na página */
+}
+
+.venda-form {
+    padding: 20px;
+    border: 2px solid var(--cor-primaria-500);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid var(--cor-primaria-500);
+    border-radius: 5px;
+}
+
+.produto-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Adiciona margem entre as linhas */
+    width: 50%;
+}
+
+.produto-input label {
+    width: 100px; /* Ajusta a largura do label */
+}
+
+.produto-input input[type="text"] {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.produto-input input[type="number"] {
+    width: 100px; /* Reduzir o tamanho do input de quantidade */
+    padding: 5px;
+    border: 1px solid var(--cor-primaria-500);
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.produto-input .add-product-button {
+    background-color: var(--cor-primaria-500);
+    color: white;
+    padding: 5px 10px; /* Ajusta o padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.produto-input .add-product-button:hover {
+    background-color: var(--cor-primaria-700); /* Cor de destaque quando hover */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-primaria-500);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-primaria-700);
+}

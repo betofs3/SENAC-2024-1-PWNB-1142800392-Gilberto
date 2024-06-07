@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/controleEstoque.css">
+    <title>Exibindo Peixes</title>
+</head>
+<body>
+    <header class="header__nav">
+        <div class="header__nav-logo">
+            <a href="../paginas/cadastroCliente.html">
+                <h2 class="header__nav-logo-h2">AquaLUX</h2>
+            </a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Clientes</a>
+                    <ul class="header__nav-sublist">
+                        <li><a href="../paginas/cadastroCliente.html">Cadastrar</a></li>
+                        <li><a href="../paginas/exibirCliente.html">Exibir</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Peixes</a>
+                    <ul class="header__nav-sublist">
+                        <li><a href="../paginas/cadastroPeixe.html">Cadastrar</a></li>
+                        <li><a href="../paginas/exibirPeixe.html">Exibir</a></li>
+                        <li><a href="../paginas/controleEstoque.html">Controle de Estoque</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Vendas</a>
+                    <ul class="header__nav-sublist">
+                        <li><a href="../paginas/venda.html">Vender</a></li>
+                        <li><a href="../paginas/exibirVenda.html">Exibir</a></li>
+                        <li><a href="../paginas/relatorioDesempenho.html">Relatórios de Desempenho</a></li>
+                        <li><a href="../paginas/analiseMercado.html">Análise de Mercado</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__nav-login">
+            <img class="header__nav-login-img" src="../icones/fisherman.png" alt="icone do usuario">
+            <a class="header__nav-login-p">Daniel Takemoto</a>
+        </div>
+    </header>
+    <main>
+        <h2 class="main-title">Controle de Estoque de Peixes</h2> 
+        <div class="table-container">
+            <table id="peixesTable">
+                <thead>
+                    <tr>
+                        <th>Espécie</th>
+                        <th>Cor</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui serão adicionadas as linhas da tabela com os peixes -->
+                </tbody>
+            </table>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar por Espécie">
+            <button id="searchButton">Procurar</button>
+        </div>
+        <button id="listAllButton">Listar todos os peixes</button>
+    </main>
+    <script src="../js/controleEstoque.js"></script>
+</body>
+</html>

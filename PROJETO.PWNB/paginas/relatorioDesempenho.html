@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/relatorioDesempenho.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Relatório de Desempenho de Vendas</title>
+</head>
+<body>
+    <header class="header__nav">
+        <div class="header__nav-logo">
+            <a href="../paginas/cadastroCliente.html">
+                <h2 class="header__nav-logo-h2">AquaLUX</h2>
+            </a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Clientes</a>
+                    <ul class="header__nav-sublist">
+                        <li><a href="../paginas/cadastroCliente.html">Cadastrar</a></li>
+                        <li><a href="../paginas/exibirCliente.html">Exibir</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Peixes</a>
+                    <ul class="header__nav-sublist">
+                        <li><a href="../paginas/cadastroPeixe.html">Cadastrar</a></li>
+                        <li><a href="../paginas/exibirPeixe.html">Exibir</a></li>
+                        <li><a href="../paginas/controleEstoque.html">Controle de Estoque</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Vendas</a>
+                    <ul class="header__nav-sublist">
+                        <li><a href="../paginas/venda.html">Vender</a></li>
+                        <li><a href="../paginas/exibirVenda.html">Exibir</a></li>
+                        <li><a href="../paginas/relatorioDesempenho.html">Relatórios de Desempenho</a></li>
+                        <li><a href="../paginas/analiseMercado.html">Analise de Mercado</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__nav-login">
+            <img class="header__nav-login-img" src="../icones/fisherman.png" alt="icone do usuario">
+            <a class="header__nav-login-p">Daniel Takemoto</a>
+        </div>
+    </header>
+    <main>
+        <h2 class="main-title">Relatório de Desempenho de Vendas</h2> 
+        <div class="search-container">
+            <label for="startDate">Data de Início:</label>
+            <input type="text" id="startDate" class="date-picker" placeholder="Selecione a data">
+
+            <label for="endDate">Data de Término:</label>
+            <input type="text" id="endDate" class="date-picker" placeholder="Selecione a data">
+
+            <button id="searchButton">Pesquisar</button>
+        </div>
+        <div class="table-container">
+            <table id="performanceTable">
+                <!-- Tabela para exibir o desempenho de vendas -->
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+        <script src="../js/relatorioDesempenho.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastroPeixe.css">
+    <title>Cadastrando um Peixe</title>
+</head>
+<body>
+  <header class="header__nav">
+    <div class="header__nav-logo">
+        <a href="../paginas/cadastroCliente.html">
+            <h2 class="header__nav-logo-h2">AquaLUX</h2>
+        </a>
+    </div>
+    <nav class="header__navigation">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Clientes</a>
+                <ul class="header__nav-sublist">
+                    <li><a href="../paginas/cadastroCliente.html">Cadastrar</a></li>
+                    <li><a href="../paginas/exibirCliente.html">Exibir</a></li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Peixes</a>
+                <ul class="header__nav-sublist">
+                    <li><a href="../paginas/cadastroPeixe.html">Cadastrar</a></li>
+                    <li><a href="../paginas/exibirPeixe.html">Exibir</a></li>
+                    <li><a href="../paginas/controleEstoque.html">Controle de Estoque</a></li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Vendas</a>
+                <ul class="header__nav-sublist">
+                    <li><a href="../paginas/venda.html">Vender</a></li>
+                    <li><a href="../paginas/exibirVenda.html">Exibir</a></li>
+                    <li><a href="../paginas/relatorioDesempenho.html">Relatórios de Desempenho</a></li>
+                    <li><a href="../paginas/analiseMercado.html">Análise de Mercado</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__nav-login">
+        <img class="header__nav-login-img" src="../icones/fisherman.png" alt="icone do usuario">
+        <a class="header__nav-login-p">Daniel Takemoto</a>
+    </div>
+</header>
+    <main>
+        <h2 class="main-title">Cadatrar um Peixe</h2>
+        <div class="form-container">
+            <form id="cadastroPeixeForm">
+                <div class="form-group">
+                    <label for="especie">Espécie</label>
+                    <input type="text" id="especie" name="especie" required placeholder="Digite a Espécie do Peixe">
+                </div>
+                <div class="form-group">
+                    <label for="tamanho">Tamanho</label>
+                    <input type="text" id="tamanho" name="tamanho" required placeholder="00 m/cm">
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso</label>
+                    <input type="text" id="peso" name="peso" required placeholder="00 kg/g">
+                </div>
+                <div class="form-group">
+                    <label for="cor">Cor</label>
+                    <input type="text" id="cor" name="cor" required placeholder="Digita a Cor do Peixe">
+                </div>
+                <div class="form-group">
+                    <label for="padrao">Padrão</label>
+                    <input type="text" id="padrao" name="padrao" required placeholder="Água Salgada ou Doce">
+                </div>
+                <div class="form-group">
+                    <label for="padrao">Quantidade</label>
+                    <input type="text" id="quantidadePeixe" name="quantidadePeixe" required placeholder="Digite a Quantidade">
+                </div>
+                <div class="form-group">
+                    <label for="preco">Preço</label>
+                    <input type="text" id="preco" name="preco" required placeholder="R$ 00,00">
+                </div>
+                <div class="form-group">
+                    <label for="condicoesVenda">Condições de Venda</label>
+                    <input type="text" id="condicoesVenda" name="condicoesVenda" required placeholder="Formas de Pagamento">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+    <script src="../js/cadastroPeixe.js"></script>
+</body>
+</html>
